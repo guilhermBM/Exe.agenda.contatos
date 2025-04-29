@@ -1,10 +1,17 @@
+import FiltroAgenda from '../../components/FiltroAgenda'
+
+import * as S from './styles'
+
 const ListaContatos = () => (
-  <aside>
+  <S.Aside>
     <div>
-      <input type="text" placeholder="Buscar" />
-      <div></div>
+      <S.Campo type="text" placeholder="Buscar" />
+      <S.Filtros>
+        <FiltroAgenda />
+        <FiltroAgenda ativo />
+      </S.Filtros>
     </div>
-  </aside>
+  </S.Aside>
 )
 
 export default ListaContatos
