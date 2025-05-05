@@ -7,8 +7,8 @@ const ListaContatos = () => (
     <div>
       <S.Campo type="text" placeholder="Buscar" />
       <S.Filtros>
-        <FiltroAgenda />
-        <FiltroAgenda ativo />
+        <FiltroAgenda legenda="favoritos" numerador={1} />
+        <FiltroAgenda legenda="todos" numerador={2} ativo />
       </S.Filtros>
     </div>
   </S.Aside>
